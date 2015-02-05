@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html id="player" class="page page--player">
+<head>
+  <meta charset="utf-8">
+  <title>Secured Video Player</title>
+  <!--
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  -->
+  <link rel="stylesheet" type="text/css" href="mediaelement/build/mediaelementplayer.min.css">
+</head>
+<body class="player">
+
+<h1>57studiosmanila.com</h1>
+<!--
+<div class="sidebar player__sidebar">
+  <ol id="player__playlist" class="playlist sidebar__playlist">
+    <li>
+      <a href="#">
+        <span>Video Name</span>
+      </a>
+    </li>
+  </ol>
+  <p id="player__status" class="status sidebar__status"></p>
+  <div class="desc sidebar__desc">
+    <p id="player__desc" class="desc__text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod aliquam.
+    </p>
+  </div>
+</div>
+-->
+<div class="playerBody player__playerBody">
+  <!--
+  <div class="screen playerBody__screen">
+    <video
+      style="width: 640px; height: 360px; left: 0px; top: 0px; transform: none;"
+      class="video-stream html5-main-video playerBody__screen__video" src="https://r14---sn-nwj7knel.googlevideo.com/videoplayback?expire=1422892869&amp;ratebypass=yes&amp;ipbits=0&amp;mime=video%2Fmp4&amp;requiressl=yes&amp;initcwndbps=150000&amp;pl=19&amp;source=youtube&amp;sver=3&amp;dur=238.422&amp;mv=m&amp;mt=1422871214&amp;ms=au&amp;id=o-AJQv-2qdpYM1oG6dTKQVu9ihue8k50Agd6CjyGVrwmdf&amp;sparams=dur%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Cmime%2Cmm%2Cms%2Cmv%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cupn%2Cexpire&amp;signature=26CAFC400F159109E34C2B99EC6383D4593275D0.5CD33CCCF98960329EDA6E7087996D113470B08F&amp;key=yt5&amp;ip=112.209.40.66&amp;itag=18&amp;upn=vJszUsykTL4&amp;mm=31&amp;fexp=900147%2C900718%2C907263%2C910810%2C927622%2C930676%2C9406303%2C943917%2C947225%2C948124%2C952302%2C952605%2C952901%2C955301%2C957201%2C959701&amp;cpn=VWrTyK1CXPBHvYx_&amp;ptk=minutephysics%252Buser&amp;oid=bxBLDScgVJeTgZDp-G3zzQ&amp;ptchn=UHW94eEFW7hkUMVaZz4eDg&amp;pltype=content&amp;c=WEB&amp;cver=html5"
+      id="player__screen"></video>
+  </div>
+  <div class="seek playerBody__seek">
+    <span class="seek__timer">
+      <span id="player__timer--elapsed" class="seek__timer--elapsed">00:00</span>
+      <span id="player__timer--total" class="seek__timer--total">00:00</span>
+    </span>
+    <label>
+      <span class="sr-only">Seek</span>
+      <input type="range" min="0" max="0" id="player__slider--seek" class="seek__slider">
+    </label>
+  </div>
+  <ul id="player__controls" class="playerBody__controls">
+    <li class="controls--play">
+      <button>
+        <span class="sr-only">Play</span>
+        <i class="fa fa-fw fa-play"></i>
+      </button>
+    </li><li class="controls--pause">
+      <button>
+        <span class="sr-only">Pause</span>
+        <i class="fa fa-fw fa-pause"></i>
+      </button>
+    </li><!--<li class="controls--stop">
+      <button>
+        <span class="sr-only">Stop</span>
+        <i class="fa fa-fw fa-stop"></i>
+      </button>
+    </li><li class="controls--prev">
+      <button>
+        <span class="sr-only">Previous</span>
+        <i class="fa fa-fw fa-fast-backward"></i>
+      </button>
+    </li><li class="controls--next">
+      <button>
+        <span class="sr-only">Next</span>
+        <i class="fa fa-fw fa-fast-forward"></i>
+      </button>
+    </li><li class="controls--mute">
+      <button>
+        <span class="sr-only">Mute</span>
+        <i class="fa fa-fw fa-volume-up"></i>
+      </button>
+    </li><li class="controls--volume">
+      <label>
+        <span class="sr-only">Volume</span>
+        <input type="range" min="0" max="100" id="player__slider--volume" class="controls__volume__slider">
+      </label>
+    </li>
+  </ul>
+  -->
+  <video id="player__screen" width="640" height="480" controls>
+    <source src="video/TCL-SONIC-CORPORATE.mp4" type="video/mp4">
+  </video>
+</div>
+
+<script src="mediaelement/build/jquery.js"></script>
+<script src="mediaelement/build/mediaelement-and-player.min.js"></script>
+
+<script>
+  (function($) {
+    $('video,audio').mediaelementplayer(/* Options */);
+  })($);
+</script>
+</body>
+</html>
